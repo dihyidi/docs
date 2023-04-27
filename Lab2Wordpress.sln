@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab2Wordpress.Presentation", "Lab2Wordpress.Presentation\Lab2Wordpress.Presentation.csproj", "{C10B8DE3-34D3-4A4B-B4CE-D34D667D85B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab2Wordpress.Data", "Lab2Wordpress.Data\Lab2Wordpress.Data.csproj", "{6CF79FC0-B0E8-455F-9712-8437D5DBD9E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab2Wordpress.Business", "Lab2Wordpress.Business\Lab2Wordpress.Business.csproj", "{EAA2DA34-8D4C-4484-98ED-FEF74337387A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C10B8DE3-34D3-4A4B-B4CE-D34D667D85B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C10B8DE3-34D3-4A4B-B4CE-D34D667D85B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C10B8DE3-34D3-4A4B-B4CE-D34D667D85B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C10B8DE3-34D3-4A4B-B4CE-D34D667D85B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CF79FC0-B0E8-455F-9712-8437D5DBD9E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CF79FC0-B0E8-455F-9712-8437D5DBD9E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CF79FC0-B0E8-455F-9712-8437D5DBD9E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CF79FC0-B0E8-455F-9712-8437D5DBD9E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAA2DA34-8D4C-4484-98ED-FEF74337387A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAA2DA34-8D4C-4484-98ED-FEF74337387A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAA2DA34-8D4C-4484-98ED-FEF74337387A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAA2DA34-8D4C-4484-98ED-FEF74337387A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
