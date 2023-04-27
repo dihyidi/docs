@@ -1,0 +1,36 @@
+﻿@model Lab2Wordpress.Data.Entities.Theme
+
+@{
+    ViewBag.Title = "Themes";
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Theme</title>
+</head>
+<body>
+<div>
+    <table>
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Primary Color</th>
+            <th>Secondary Color</th>
+            <th>Gradient</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>@Model?.Id</td>
+            <td>@Model?.PrimaryColor</td>
+            <td>@Model?.SecondaryColor</td>
+            <td>@Model?.Gradient</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

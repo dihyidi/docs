@@ -1,0 +1,38 @@
+﻿@model Lab2Wordpress.Data.Entities.Theme
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <h2>title</h2>
+</head>
+
+<body>
+    <form asp-route-returnUrl="@Model" method="post" class="w-50">
+        <h2>Create theme</h2>
+        <div>
+            <label asp-for="PrimaryColor"></label>
+            <input asp-for="PrimaryColor" placeholder="8 + characters (letters and numbers)"
+                   minlength="8" required/>
+        </div>
+        <div>
+            <label asp-for="SecondaryColor"></label>
+            <input asp-for="SecondaryColor" placeholder="8 + characters (letters and numbers)"
+                   minlength="8" required/>
+        </div>
+        <div>
+            <label asp-for="Gradient"></label>
+            <input asp-for="Gradient" placeholder="8 + characters (letters and numbers)"
+                   minlength="8" required/>
+        </div>
+        <div asp-validation-summary=All class="text-danger"></div>
+        <div>
+            <button type="submit">Create</button>
+        </div>
+    </form>
+</body>

@@ -1,0 +1,41 @@
+﻿@using Lab2Wordpress.Data.Entities
+@model IList<Lab2Wordpress.Data.Entities.Theme>
+
+@{
+    ViewBag.Title = "Themes";
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Themes</title>
+</head>
+<body>
+<div>
+    <table>
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Primary Color</th>
+            <th>Secondary Color</th>
+            <th>Gradient</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var theme in @Model ?? Enumerable.Empty<Theme>())
+        {
+            <tr>
+                <td>@theme.Id</td>
+                <td>@theme.PrimaryColor</td>
+                <td>@theme.SecondaryColor</td>
+                <td>@theme.Gradient</td>
+                <td><a asp-controller="Themes" asp-action="GetById" asp-route-id="@theme.Id">View</a></td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
