@@ -19,7 +19,7 @@ public class ThemeService : IThemeService
 
     public Task<IList<Theme>> GetAllAndWriteToCsvAsync() => themeRepository.GetAllAndWriteToCsvAsync(Filepath);
 
-    public Task<IList<Theme>> GenerateAndWriteToCsvAsync() => themeRepository.GenerateWriteToCsvAsync(Filepath, 5);
+    public Task<IList<Theme>> GenerateAndWriteToCsvAsync() => themeRepository.GenerateWriteToCsvAsync(Filepath, 1000);
 
     public Task<List<Theme>> GetAllAsync() => themeRepository.GetAllAsync();
 
