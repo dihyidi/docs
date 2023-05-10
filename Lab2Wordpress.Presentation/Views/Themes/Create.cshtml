@@ -7,32 +7,32 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="uk">
 <head>
-    <h2>title</h2>
+    <title>Create your theme</title>
 </head>
 
 <body>
-    <form asp-route-returnUrl="@Model" method="post" class="w-50">
-        <h2>Create theme</h2>
-        <div>
-            <label asp-for="PrimaryColor"></label>
-            <input asp-for="PrimaryColor" placeholder="8 + characters (letters and numbers)"
-                   minlength="8" required/>
-        </div>
-        <div>
-            <label asp-for="SecondaryColor"></label>
-            <input asp-for="SecondaryColor" placeholder="8 + characters (letters and numbers)"
-                   minlength="8" required/>
-        </div>
-        <div>
-            <label asp-for="Gradient"></label>
-            <input asp-for="Gradient" placeholder="8 + characters (letters and numbers)"
-                   minlength="8" required/>
-        </div>
-        <div asp-validation-summary=All class="text-danger"></div>
-        <div>
-            <button type="submit">Create</button>
-        </div>
-    </form>
+<h3>Create your own theme</h3>
+<form asp-route-returnUrl="@Model" method="post">
+    <div class="form__row">
+        <label asp-for="PrimaryColor">Primary color</label>
+        <input asp-for="PrimaryColor" placeholder="Please enter min 8 characters (letters and numbers)"
+               minlength="8" required/>
+    </div>
+    <div class="form__row">
+        <label asp-for="SecondaryColor">Secondary color</label>
+        <input asp-for="SecondaryColor" placeholder="Please enter min 8 characters (letters and numbers)"
+               minlength="8" required/>
+    </div>
+    <div class="form__row">
+        <label asp-for="Gradient">Gradient name</label>
+        <input asp-for="Gradient" placeholder="Please enter min 8 characters (letters and numbers)"
+               minlength="8" required/>
+    </div>
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="submit__button-container">
+        <button type="submit" class="submit__button">Save</button>
+    </div>
+</form>
 </body>

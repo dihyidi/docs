@@ -10,9 +10,78 @@ html {
 
 html {
   position: relative;
-  min-height: 100%;
+  height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+  min-height: 100%;
+  height: 100%;
+}
+
+.body__container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-gap: 8px;
+  height: 100%;
+}
+
+.sidebar {
+  background-color: lightblue;
+  padding: 8px;
+}
+
+.sidebar__brand {
+  text-decoration: none;
+  text-align: center;
+}
+
+.sidebar__links-item {
+  font-weight: 600;
+  border-bottom: 1px dotted;
+}
+
+.main-content {
+  padding-top: 16px;
+}
+
+.form {
+  
+}
+
+.form__row {
+  margin: 8px 0;
+}
+
+.form__row label {
+  width: 15%;
+}
+
+.form__row input {
+  margin-left: 8px;
+  width: 40%;
+}
+
+.submit__button-container {
+  margin-left: 15%;
+}
+
+.submit__button {
+  background-color: aquamarine;
+  padding: 5px 15px;
+  border: 2px outset;
+  border-radius: 5px;
+}
+
+table {
+  width: 50%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 4px;
 }
