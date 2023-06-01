@@ -33,6 +33,14 @@
                 <td>@theme.SecondaryColor</td>
                 <td>@theme.Gradient</td>
                 <td><a asp-controller="Themes" asp-action="GetById" asp-route-id="@theme.Id">View</a></td>
+                <td>
+                    <form method="post" action="@Url.Action("Delete", "Themes", new { @theme.Id })">
+                        @*<input type="hidden" name="column1" value="@theme.PrimaryColor" />
+                        <input type="hidden" name="column1" value="@theme.SecondaryColor" />
+                        <input type="hidden" name="column1" value="@theme.Gradient" />*@
+                        <button type="submit">X</button>
+                    </form>
+                </td>
             </tr>
         }
         </tbody>

@@ -1,0 +1,23 @@
+﻿@model Lab2Wordpress.Data.Entities.Theme
+
+<form asp-route-returnUrl="@Model" method="post">
+    <div class="form__row">
+        <label asp-for="PrimaryColor">Primary color</label>
+        <input asp-for="PrimaryColor" placeholder="Please enter min 8 characters (letters and numbers)"
+               minlength="8" required value="@Model?.PrimaryColor"/>
+    </div>
+    <div class="form__row">
+        <label asp-for="SecondaryColor">Secondary color</label>
+        <input asp-for="SecondaryColor" placeholder="Please enter min 8 characters (letters and numbers)"
+               minlength="8" required value="@Model?.SecondaryColor"/>
+    </div>
+    <div class="form__row">
+        <label asp-for="Gradient">Gradient name</label>
+        <input asp-for="Gradient" placeholder="Please enter min 8 characters (letters and numbers)"
+               minlength="8" required value="@Model?.Gradient"/>
+    </div>
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="submit__button-container">
+        <button type="submit" class="submit__button">Save</button>
+    </div>
+</form>

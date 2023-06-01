@@ -33,6 +33,25 @@ public class ThemesController : Controller
     {
         return View(await themesService.CreateAsync(theme));
     }
+    
+    public async Task<IActionResult> Edit(int id)
+    {
+        return View(await themesService.GetByIdAsync(id));
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Edit(int id, [FromForm] Theme theme)
+    {
+        await themesService.UpdateAsync(id, theme);
+        return RedirectToAction(nameof(GetById), new {id});
+    }
+
+    [HttpPost, ActionName("Delete")]
+    public async Task<IActionResult> DeleteTheme(int id)
+    {
+        await themesService.DeleteAsync(id);
+        return RedirectToAction(nameof(GetAll));
+    }
 
     public async Task<IActionResult> Generate()
     {

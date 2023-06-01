@@ -1,18 +1,18 @@
 ﻿@model Lab2Wordpress.Data.Entities.Theme
 
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Edit";
     Layout = "_Layout";
-}  
+}
 
 <!DOCTYPE html>
 
 <html lang="uk">
 <head>
-    <title>Create your theme</title>
+    <title>Edit theme</title>
 </head>
 
 <body>
-<h3>Create your own theme</h3>
+<h3>Edit theme</h3>
 @await Html.PartialAsync("_ThemeForm", Model)
 </body>
